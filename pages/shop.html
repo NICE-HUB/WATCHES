@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styles/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  .card {
+    max-width: 200px;
+    margin: auto;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: arial;
+    display: inline-block; /* Display the cards inline */
+    margin: 10px; 
+  }
+  
+  .price {
+    color: white;
+    font-size: 22px;
+  }
+  
+  .card button {
+    font-family: lato,sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  position: relative;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .bg image{
+  max-width: 100%;
+  height: auto;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+  </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" id="home"><i class="fa-solid fa-house"> BACK Home</i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="/watches/flat-lay-black-friday-assortment.jpg" style="width:100%">
+  <h5>A Taste Of Sytle</h5>
+  <p> your number one provider of Rolex, Hublot, Omega, Patek Philippe.</p>
+</div>
+
+<div class="mySlides fade">
+  <img src="/watches/closeup-watch_53876-32028.jpg" style="width:100%">
+  <h5>A Taste Of Sytle</h5>
+        <p> your number one provider of Rolex, Hublot, Omega, Patek Philippe.</p>
+</div>
+
+<div class="mySlides fade">
+  <img src="/watches/black-friday-sales.jpg" style="width:100%">
+  <h5>A Taste Of Sytle</h5>
+        <p> your number one provider of Rolex, Hublot, Omega, Patek Philippe.</p>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+  <h2 style="text-align:center">Product Card</h2>
+  <div class="card">
+    <img src="/watches/hand-watch-man-watch-isolated.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>terazo</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    <p><button id="addcart">Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <img src="/watches/new-smartwatch.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Apus Silver Blue</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    <p><button id="addcart">Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <img src="/watches/smart-watch-realistic.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>razo</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    <p><button id="addcart">Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <img src="/watches/man-looking-his-watch_53876-13503.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Vela Rg Metallic</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    <p><button id="addcart">Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <img src="/watches/smart-watch-realistic.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Avior </h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    <p><button id="addcart">Add to Cart</button></p>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+  <hr>
+<footer>
+    <marquee width="400px" height="80px" behavior="alternate" style="border:2px solid white">  
+        <p id="pfooter">&copy; 2023  SEIZE THE MOMENT</p>  
+        </marquee> 
+       
+</footer>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+document.getElementById("home").addEventListener("click", function() {
+  alert("we regret youre going,theres still affordable watches! scroll down to see more products");
+});
+window.addEventListener("resize", function(){
+  document.getElementById("demo").innerHTML = Math.random();
+});
+var exchangeRateData = {
+    "base": "USD",
+    "date": "2018-02-13",
+    "rates": {
+        "CAD": 1.260046,
+        "CHF": 0.933058,
+        "EUR": 0.806942,
+        "GBP": 0.719154,
+    }
+};
+function convertCurrency(amount, fromCurrency, toCurrency) {
+    if (fromCurrency === toCurrency) {
+        return amount; 
+    }
+    if (exchangeRateData.base === fromCurrency) {
+        return amount * exchangeRateData.rates[toCurrency];
+    }
+    if (exchangeRateData.base === toCurrency) {
+        return amount / exchangeRateData.rates[fromCurrency];
+    }
+    var baseAmount = amount / exchangeRateData.rates[fromCurrency];
+    return baseAmount * exchangeRateData.rates[toCurrency];
+}
+function calculateTotalCost() {
+    var cartItems = [
+        { name: "terazo", priceUSD: 19.0 },
+    ];
+    var totalCostUSD = cartItems.reduce(function (acc, item) {
+        return acc + item.priceUSD;
+    }, 0);
+    return totalCostUSD;
+}
+
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html> 
